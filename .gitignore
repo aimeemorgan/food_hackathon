@@ -1,2 +1,3 @@
-alembic
-*.py
+alembic/
+alembic.ini
+*.pyc

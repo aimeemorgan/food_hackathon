@@ -27,18 +27,17 @@ class Planting(Base):
 	group_id = Column(Integer, ForeignKey('groups.id'))
 
 
-class Reminder(Base)
-:	__tablename__ = 'reminders'
+class Reminder(Base):
+	__tablename__ = 'reminders'
 
 	id = Column(Integer, primary_key=True)
 	due_date = Column(Date, nullable=False)
 	kind = Column(Enum('water', 'fertilize', 'harvest', name='reminder_type',
 			nullable=False))
 	text = Column(String(256))
-	completed_date = Column(Date)
+	completed_date = Column(Date, default=None)
 	recurrence = Column(Integer)
 	planting_id = Column(Integer, ForeignKey('plantings.id'))
-
 
 
 class Cultivar(Base):
