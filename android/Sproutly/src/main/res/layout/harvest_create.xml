@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="false"
+    android:columnCount="5"
+    android:paddingTop="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <TextView
+        android:text="This is a test of the emergency broadcast system. This is only a test. Had this been an actual emergency we would have fled in terror and you would not have been informed."
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:text="Harvest your crop"
+        android:textSize="14pt" />
+
+    <EditText
+        android:ems="8"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+        android:hint="How many?"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:ems="8"
+        android:layout_column="3"
+        android:layout_columnSpan="2"
+        android:layout_gravity="right"
+        android:hint="Fruits? Ears?" />
+
+    <EditText
+        android:lines="4"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="bottom"
+        android:textAlignment="viewEnd"
+        android:hint="Notes" />
+
+    <Space
+        android:layout_gravity="fill"
+        android:layout_columnSpan="5" />
+
+    <View
+        android:id="@+id/horizontal_divider_login"
+        android:layout_columnSpan="5"
+        android:layout_column="0"
+        android:layout_height="1dp"
+        android:background="#bebebe" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:padding="0px"
+        android:layout_margin="0px"
+        android:layout_gravity="fill_horizontal">
+
+        <Button
+            android:text="Cancel"
+            android:layout_weight="2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_column="2"
+            android:layout_width="1dip"
+            android:layout_gravity="bottom"
+            android:background="#bebebe"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:text="Save"
+            android:layout_weight="2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</GridLayout>

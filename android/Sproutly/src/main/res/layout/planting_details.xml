@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="false"
+    android:columnCount="5"
+    android:padding="8dp">
+
+    <TextView
+        android:text="This is a test of the emergency broadcast system. This is only a test. Had this been an actual emergency we would have fled in terror and you would not have been informed."
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:ems="10"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="14pt"
+        android:text="Planting Name" />
+
+    <TextView
+        android:ems="8"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Date planted"
+        android:onClick="showPlantedPicker" />
+
+    <TextView
+        android:layout_gravity="right|center_vertical"
+        android:layout_column="0"
+        android:text="Cultivar:" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_columnSpan="3"
+        android:text="Burpee early girl tomatoes" />
+
+    <TextView
+        android:layout_gravity="right"
+        android:layout_column="0"
+        android:text="Group:" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_columnSpan="3"
+        android:text="Front tomato Earthbox" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_columnSpan="5"
+        android:paddingTop="8dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="1.5 pounds and 30 fruits harvested this season!" />
+
+    <TextView
+        android:layout_gravity="right"
+        android:layout_column="0"
+        android:text="Reminders:" />
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:drawSelectorOnTop="false" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:text="No reminders set"
+        android:layout_column="0"
+        android:layout_columnSpan="5"/>
+
+</GridLayout>
