@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="false"
+    android:columnCount="5"
+    android:padding="8dp">
+
+    <TextView
+        android:text="This is a test of the emergency broadcast system. This is only a test. Had this been an actual emergency we would have fled in terror and you would not have been informed."
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="left" />
+
+    <EditText
+        android:ems="10"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="14pt"
+        android:hint="Planting Name"/>
+
+    <EditText
+        android:ems="8"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Date planted"
+        android:onClick="showPlantedPicker" />
+
+    <TextView
+        android:layout_gravity="right|center_vertical"
+        android:layout_column="0"
+        android:text="Cultivar:" />
+
+    <Spinner
+        android:layout_gravity="left"
+        android:layout_columnSpan="3" />
+
+    <Button
+        android:text="Add"
+        android:src="@drawable/ic_new"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:layout_gravity="right"
+        android:layout_column="0"
+        android:text="Group:" />
+
+    <Spinner
+        android:layout_gravity="left"
+        android:layout_columnSpan="3" />
+
+    <Button
+        android:text="Add"
+        android:src="@drawable/ic_new"
+        android:layout_gravity="left" />
+
+    <Space
+        android:layout_gravity="fill"
+        android:layout_columnSpan="5" />
+
+    <View
+        android:id="@+id/horizontal_divider_login"
+        android:layout_columnSpan="5"
+        android:layout_column="0"
+        android:layout_height="1dp"
+        android:background="#bebebe" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal">
+
+        <Button
+            android:text="Cancel"
+            android:layout_weight="2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_column="2"
+            android:layout_width="1dip"
+            android:layout_gravity="bottom"
+            android:background="#bebebe"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:text="Save"
+            android:layout_weight="2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</GridLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+    <GridLayout
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3">
+
+        <Space
+            android:layout_column="0"
+            android:layout_gravity="fill" />
+
+        <TextView
+            android:text="No data! Create some Plantings using the button above."
+            android:textSize="12pt"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <Space
+            android:layout_column="2"
+            android:layout_gravity="fill" />
+    </GridLayout>
+</LinearLayout>
